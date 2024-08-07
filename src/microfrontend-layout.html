@@ -6,20 +6,16 @@
 
   -->
 
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
-  <main>
+  <div class="microfrontends">
+    <div class="navigation" >
+      <application name="@react-app/reactPro"></application>
+    </div>
+    
+    <main>
     <route default>
-      <application name="@single-spa/welcome"></application>
+      <!-- <application name="@react-app/reactPro"></application> -->
+      <!-- <application name="@single-spa/welcome"></application> -->
     </route>
   </main>
+</div>
 </single-spa-router>

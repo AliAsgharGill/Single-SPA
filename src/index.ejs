@@ -13,6 +13,14 @@
   -->
   <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
 
+  <style>
+    .microfrontends{
+      height:100vh;
+      width:100%;
+      display: grid;
+      grid-template-columns: 200px auto ;
+    }
+  </style>
   <!--
     This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
@@ -48,7 +56,8 @@
     {
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@baseOrg/root-config": "//localhost:9000/baseOrg-root-config.js"
+        "@baseOrg/root-config": "//localhost:9000/baseOrg-root-config.js",
+        "@react-app/reactPro":"http://localhost:8080/reactOrg-reactPro.js "
       }
     }
   </script>
